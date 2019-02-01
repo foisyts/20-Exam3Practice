@@ -53,6 +53,7 @@ def run_test_doubler():
     #    TIME ESTIMATE:   10 minutes.
     # -------------------------------------------------------------------------
 
+
     print()
     print('--------------------------------------------------')
     print('Testing the   doubler   function:')
@@ -111,6 +112,13 @@ def doubler(list1, list2):
     #    DIFFICULTY:      4
     #    TIME ESTIMATE:   5 minutes.
     # -------------------------------------------------------------------------
+    for k in range(len(list1)):
+        list1[k] = list1[k] * 2
+    new_list = []
+    for k in range(len(list2)):
+        new_list = new_list + [list2[k] * 2]
+    return new_list
+
 
 
 # -----------------------------------------------------------------------------
